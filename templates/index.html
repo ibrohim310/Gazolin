@@ -1,0 +1,793 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- :: Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Gazolin is a Industry & Manufacturing HTML Template. Designed with great attention to details, flexibility and performance. It is ultra professional, smooth and sleek, with a clean modern layout. Gazolin specially designed for Automotive, Construction, Factories, Industrial, Industrial Business, Industrial Chemicals, Industrial Corporate, Industrial Engineering, Industrial Factory, Industrial HTML5, Industry, Machinery, Manufacturing, Mechanical Engineering, Power Energy, Services Company and other Industry & Manufacturing related services. Gazolin comes with most advanced and latest web technologies, enjoyable UX and the most beautiful design trends. Our template provides a platform to simply edit elements, choose styles and play around with the look and feel of your site. Build beautiful, intelligent websites with over 03+ Homepage Concepts ready to go or combine, build a layout has never been easier. There is a huge range of +34 styled pages waiting for your customization, anything you can think of can be built with our template. If you are searching for innovative, modern and clean HTML5 template, you must choose Gazolin. Gazolin comes with necessary features and pages. Gazolin comes with necessary features for Industrial websites such as about pages, Testimonials, Clients, questions & answers, work, services, team & single team profiles, awesome blog pages and more. This HTML template can easily satisfy all of your needs.">
+        <meta name="keywords" content="Automotive, Construction, Factories, Industrial, Industrial Business, Industrial Chemicals, Industrial Corporate, Industrial Engineering, Industrial Factory, Industrial HTML5, Industry, Machinery, Manufacturing, Mechanical Engineering, Power Energy">
+
+        <!-- :: Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- :: Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+        <!-- :: Title -->
+        <title>Gazolin - sanoat &amp; HTML shablonini ishlab chiqarish</title>
+
+        <!-- :: Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap">
+
+        <!-- :: Fontawesome -->
+        <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/all.min.css' %}">
+
+        <!-- :: Flaticon -->
+        <link rel="stylesheet" href="{% static 'fonts/flaticon/style.css' %}">
+
+        <!-- :: Animate -->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        
+        <!-- :: Owl Carousel -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        
+        <!-- :: Lity -->
+        <link rel="stylesheet" href="{% static 'css/lity.min.css' %}">
+        
+        <!-- :: Nice Select CSS -->
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+        
+        <!-- :: Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+        <!-- :: Style CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- :: Style Responsive CSS -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    <body>
+        <!-- :: Loading -->
+        <div class="loading">
+            <div class="loading-box">
+                <div class="lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- :: All Navbar -->
+        <header class="all-navbar fixed-top">
+            <!-- :: Navbar -->
+            <nav class="nav-bar">
+                <div class="container">
+                    <div class="content-box d-flex align-items-center justify-content-between">
+                        <div class="nav-bar-links" id="open-nav-bar-menu">
+                            <ul class="level-1">
+                                <li class="item-level-1">
+                                    <a href="{% url 'index' %}" class="link-level-1">Asosiy sahifa</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'servises' %}" class="link-level-1">Xizmatlar</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'blogs' %}" class="link-level-1">blogs</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'contacts' %}" class="link-level-1">Xabar qoldirish</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-bar-tools d-flex align-items-center justify-content-between">
+                            <li class="item">
+                                <span class="search-icon open"><i class="fas fa-search"></i></span>
+                            </li>
+                            <li class="item phone">
+                                <div class="nav-bar-contact">
+                                    <i class="ar-icons-phone"></i>
+                                    <div class="content-box">
+                                        <span>Telefon raqam</span>
+                                        <a href="tel:01212843661">0121284 3661</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <span class="menu-icon open"><i class="fas fa-list"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- :: Search Box -->
+        <div class="search-box">
+            <form>
+                <input type="search" placeholder="Search Here....." required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <span class="search-box-icon exit"><i class="fas fa-times"></i></span>
+        </div>
+        
+        <!-- :: Menu Box -->
+        <div class="menu-box">
+            <div class="inner-menu">
+                <div class="website-info">
+                    <a href="index.html" class="logo"><img class="img-fluid" src="{% static 'images/logo/02_logo.png' %}" alt="02 Logo"></a>
+                    <p>
+                        Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <div class="contact-box">
+                        <i class="ar-icons-call"></i>
+                        <div class="box">
+                            <a class="phone" href="tel:01212843661">0121284 3661</a>
+                            <a class="phone" href="tel:01029134630">0102913 4630</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="ar-icons-email"></i>
+                        <div class="box">
+                            <a class="mail" href="mailto:support@Gazolin.com">Support@Gazolin.com</a>
+                            <a class="mail" href="mailto:mailbox@ar-coder.com">MailBox@AR-Coder.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="ar-icons-location"></i>
+                        <div class="box">
+                            <p>14D Street Brooklyn,</p>
+                            <p>New York.</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="menu-box-icon exit"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+        
+        <!-- :: Header -->
+        <section class="header" id="page">
+            <div class="header-carousel owl-carousel owl-theme">
+                <div class="sec-hero display-table" style="background-image: url(static/images/header/01_header.jpg)">
+                    <div class="table-cell">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="banner">
+                                        <div class="top-handline">Orzularingizni amalga oshirishga tayyor!</div>
+                                        <h1 class="handline">Sanoat biznesi uchun eng yaxshi yechim</h1>
+                                        <p class="about-website">
+                                            Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                                        <ul class="header-list-features">
+                                            <li class="item">
+                                                <i class="fas fa-check"></i><h5>100% qoniqish kafolati</h5>
+                                            </li>
+                                            <li class="item">
+                                                <i class="fas fa-check"></i><h5>
+                                                    Sifatni nazorat qilish tizimi</h5>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-box">
+                                            <a class="btn-1 move-section" href="{% url 'contacts' %}"><span>Keling, boshlaymiz</span></a>
+                                            <a class="btn-1 btn-2 ml-30" href="01_services.html"><span>
+                                                Bizning xizmatlarimiz</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-hero display-table" style="background-image: url(static/images/header/03_header.jpg)">
+                    <div class="table-cell">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="banner">
+                                        <div class="top-handline">40 yillik tajribamiz biz xizmatlarni taqdim etamiz</div>
+                                        <h1 class="handline">Sanoat turli xil yuqori sifatli mahsulotlar</h1>
+                                        <p class="about-website">
+                                            Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                                        <div class="btn-box">
+                                            <a class="btn-1 btn-2" href="{% url 'servises' %}"><span>
+                                                Biz haqimizda</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-hero display-table" style="background-image: url(static/images/header/02_header.jpg)">
+                    <div class="table-cell">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="banner">
+                                        <div class="top-handline">
+                                            Sifat &amp; Integrity Service Agency</div>
+                                        <h1 class="handline">Samarali qurilish echimlarini taqdim eting!</h1>
+                                        <p class="about-website">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                                        <ul class="header-list-features">
+                                            <li class="item">
+                                                <i class="fas fa-check"></i><h5>
+                                                    Aniq sinov jarayonlari</h5>
+                                            </li>
+                                            <li class="item">
+                                                <i class="fas fa-check"></i><h5>
+                                                    Yuqori professional xodimlar</h5>
+                                            </li>
+                                        </ul>
+                                        <div class="btn-box">
+                                            <a class="btn-1 btn-3 ml-30" href="01_about-us.html"><span>
+                                                Ko'proq o'qish+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: About US -->
+        <section class="about-us py-100" id="start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-us-img-box">
+                            <div class="img-box" style="background-image: url(static/images/about-us/01_about-us.jpg)"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-us-text-box">
+                            <div class="sec-title">
+                                <h2>
+                                    Dunyodagi eng yaxshi sanoat markaziga xush kelibsiz</h2>
+                                <h3>Sanoatdagi global yetakchi & amp; Innovatsion mahsulotlar ishlab chiqarish.</h3>
+                                <p class="sec-explain">
+                                    Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <p class="providing">
+                                        Kelajak uchun innovatsion veb-sayt echimini taqdim etish</p>
+                                    <ul class="about-us-core-list">
+                                        <li class="item">
+                                            <i class="fas fa-check"></i>
+                                            <h4>Biz Qulity ishlab chiqarish materiallaridan foydalanamiz</h4>
+                                        </li>
+                                        <li class="item">
+                                            <i class="fas fa-check"></i>
+                                            <h4>Gazolin noyob texnologiyani taqdim etadi</h4>
+                                        </li>
+                                        <li class="item">
+                                            <i class="fas fa-check"></i>
+                                            <h4>Sertifikatlangan guruh &amp; Tajribali Jamoa</h4>
+                                        </li>
+                                        <li class="item">
+                                            <i class="fas fa-check"></i>
+                                            <h4>
+                                                Bir nechta sanoatning eng yaxshi xizmatlari</h4>
+                                        </li>
+                                    </ul>
+                                    <div class="img-person">
+                                        <img class="img-fluid about-us-person" src="{% static 'images/about-us/01_about-us-person.jpg' %}" alt="About US Person">
+                                        <img class="img-fluid signature" src="{% static 'images/01_signature.png' %}" alt="About US Signature">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 d-flex align-items-center justify-content-between">
+                                    <div class="about-us-features-carousel owl-carousel owl-theme">
+                                        <div class="item">
+                                            <i class="ar-icons-computer"></i>
+                                            <h5>
+                                                Shaffof narxlash</h5>
+                                            <a class="btn-1 btn-3" href="{% url 'servises' %}"><span>
+                                                Ko'proq o'qish</span></a>
+                                        </div>
+                                        <div class="item">
+                                            <i class="ar-icons-check-list"></i>
+                                            <h5>
+                                                Qoniqish kafolati 100%</h5>
+                                            <a class="btn-1 btn-3" href="{% url 'servises' %}"><span>
+                                                Ko'proq o'qish</span></a>
+                                        </div>
+                                        <div class="item">
+                                            <i class="ar-icons-architect"></i>
+                                            <h5>
+                                                Shaxsiylashtirilgan yechimlar</h5>
+                                            <a class="btn-1 btn-3" href="{% url 'servises' %}"><span>
+                                                Ko'proq o'qish</span></a>
+                                        </div>
+
+
+                                        
+                                        <div class="item">
+                                            <i class="ar-icons-plan-1"></i>
+                                            <h5>
+                                                Aniq sinov</h5>
+                                            <a class="btn-1 btn-3" href="{% url 'servises' %}"><span>
+                                                Ko'proq o'qish</span></a>
+                                        </div>
+                                        <div class="item">
+                                            <i class="ar-icons-architect"></i>
+                                            <h5>Atrof-muhit ombori</h5>
+                                            <a class="btn-1 btn-3" href="{% url 'servises' %}"><span>
+                                                Ko'proq o'qish</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: Services -->
+        <section class="services">
+            <div class="bg-section">
+                <div class="overlay overlay-2"></div>
+            </div>
+            <div class="container">
+                <div class="sec-title">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h2>
+                                Biz taklif qiladigan xizmatlar</h2>
+                            <h3>
+                                Bir nechta sanoatning yuqori sifatli xizmatlari</h3>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sec-title">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h2>Biz taklif qiladigan xizmatlar</h2>
+                                <h3>
+                                    Bir nechta sanoatning yuqori sifatli xizmatlari
+                                    </h3>
+                            </div>
+                            <div class="col-lg-5 d-flex align-items-center">
+                                <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-carousel owl-carousel owl-theme">
+                        {% for service in servises %}
+                        <div class="services-carousel-item">
+                            <i class="ar-icons-tank"></i>
+                            <h4>{{service.title}}</h4>
+                            <p>{{service.body}}</p>
+                            <a class="btn-1 btn-3 open-link" href="{% url 'servises' %}"><span>Koproq oqish</span></a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: Team -->
+        <section class="team py-100-70">
+            <div class="container">
+                <div class="sec-title">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h2>
+                                Ekspert a'zolar</h2>
+                            <h3>
+                                Malakali muhandislar xodimlari</h3>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="team-box">
+                            <div class="img-box">
+                                <img class="img-fluid" src="{% static 'images/team/01_team.jpg' %}" alt="01 team">
+
+                            </div>
+                            <div class="text-box text-center">
+                                <h5><a href="01_team.html">Eng Anwar Ramadan</a></h5>
+                                <span>Buyurtmachilar bilan ishlash bo'yicha menejer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="team-box">
+                            <div class="img-box">
+                                <img class="img-fluid" src="{% static 'images/team/02_team.jpg' %}" alt="02 team">
+                            </div>
+                            <div class="text-box text-center">
+                                <h5><a href="01_team.html">Eng Osama bakri</a></h5>
+                                <span>
+                                    Asoschisi &amp; Bosh direktor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="team-box">
+                            <div class="img-box">
+                                <img class="img-fluid" src="{% static 'images/team/03_team.jpg' %}" alt="03 team">
+
+                            </div>
+                            <div class="text-box text-center">
+                                <h5><a href="01_team.html">Eng Omnia Ramadan</a></h5>
+                                <span>
+                                    Sener muhandis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: Provide -->
+        <section class="provide">
+            <div class="bg-section">
+                <div class="overlay overlay-3"></div>
+            </div>
+            <div class="container">
+                <div class="sec-title">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h3>Gazolin barqaror taraqqiyot uchun eng yaxshi xizmatni taqdim etadi</h3>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="provide-core-list">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="provide-core-list-item">
+                                <i class="ar-icons-idea"></i>
+                                <h4>
+                                    45 yillik tajriba</h4>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="provide-core-list-item">
+                                <i class=" ar-icons-foreman"></i>
+                                <h4>Eng yaxshi jamoa a'zosi</h4>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="provide-core-list-item">
+                                <i class="ar-icons-electricity"></i>
+                                <h4>
+                                    Eng yaxshi xizmatlar</h4>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="provide-core-list-item">
+                                <i class="ar-icons-forklift"></i>
+                                <h4>
+                                    Noyob texnologiya</h4>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- :: Qoute Box -->
+                <div class="quote-box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="sec-title">
+                                <h3>
+                                    Har bir yangilanishni oling!</h3>
+                                <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                            </div>
+                            <div class="contact-info">
+                                <h4>
+                                    Savollaringiz bormi!</h4>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="contact-box">
+                                            <i class="ar-icons-call"></i>
+                                            <div class="box">
+                                                <a class="phone" href="tel:0201212843661">0121284 3661</a>
+                                                <a class="phone" href="tel:0201029134630">0102913 4630</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="contact-box">
+                                            <i class="ar-icons-email"></i>
+                                            <div class="box">
+                                                <a class="mail" href="mailto:mailbox@ar-coder.com">MailBox@AR-Coder.com</a>
+                                                <a class="mail" href="mailto:support@Gazolin.com">Support@Gazolin.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="contact-box last">
+                                            <i class="ar-icons-location"></i>
+                                            <div class="box">
+                                                <p>14D Street Brooklyn,</p>
+                                                <p>New York.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% csrf_token %}
+                        <div class="col-md-6">
+                            <form class="row form-contact">
+                                <div class="col-lg-6">
+                                    <div class="quote-item">
+                                        <input type="text" name="title" placeholder="Ismingizni kiriting" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="quote-item">
+                                        <input type="email" name="email" placeholder="Emailingizni kiriting" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="quote-item">
+                                        <select name="industry">
+                                            <option value="Select your industry">O'z sohangizni tanlang</option>
+                                            <option value="Constraction Of Engineering">
+                                                Muhandislik qurilishi</option>
+                                            <option value="Petroleum Gas Energy">
+                                                Neft &amp; Gaz energiyasi</option>
+                                            <option value="Basic Industrial Chemicals">
+                                                Asosiy &amp; Sanoat kimyosi</option>
+                                            <option value="Mechanical Engineering">
+                                                Mashinasozlik</option>
+                                            <option value="Bridge Constraction">
+                                                Ko'prik qurilishi</option>
+                                            <option value="Automotive Manufacturing">
+                                                Avtomobil ishlab chiqarish</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="quote-item">
+                                        <input type="tel" name="phone" placeholder="Telefon raqam" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="quote-item">
+                                        <div class="quote-item">
+                                            <textarea name="body" placeholder="Xabar tafsilotlari!" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="quote-item">
+                                        <button class="btn-1 btn-3 submit" type="submit"><span>
+                                            So‘rov yuborish</span></button>
+										<span class="out-message"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: Statistic -->
+        <div class="statistic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic-item">
+                            <i class="ar-icons-checklist"></i>
+                            <div class="content">
+                                <div class="counter statistic-counter">7.165</div>
+                                <div class="counter-name">
+                                    2020 yilda yakunlangan loyihalar va turar-joylar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic-item">
+                            <i class="ar-icons-conveyor-2"></i>
+                            <div class="content">
+                                <div class="counter statistic-counter">3.422</div>
+                                <div class="counter-name">
+                                    Biz global miqyosda xizmat qilgan qoniqarli mijozlar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic-item">
+                            <i class="ar-icons-conveyor-3"></i>
+                            <div class="content">
+                                <div class="counter statistic-counter">1.888</div>
+                                <div class="counter-name">
+                                    Malakali Xodimlar Va Ishchilar Biz Bilan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="statistic-item">
+                            <i class="ar-icons-idea"></i>
+                            <div class="content">
+                                <div class="counter statistic-counter">45</div>
+                                <div class="counter-name">Zavodda va ishlab chiqarishda ko'p yillik tajriba</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- :: Blog -->
+        <section class="blog py-100-70">
+            <div class="container">
+                <div class="sec-title">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h2>Oxirgi maqolalar</h2>
+                            <h3>Barcha yangiliklarni o'qing</h3>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <p class="sec-explain">Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="img-box">
+                                <a href="{% url 'blogs' %}" class="open-post">
+                                    <img class="img-fluid" src="{% static 'images/blog/01_blog.jpg' %}" alt="01 Blog">
+                                </a>
+                                <ul>
+                                    <li><a href="{% url 'blogs' %}">Oil &amp; Gas</a></li>
+                                    <li><a href="{% url 'blogs' %}">,</a></li>
+                                    <li><a href="{% url 'blogs' %}">Insights</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-box">
+                                <a href="{% url 'blogs' %}" class="title-blog">
+                                    <h5>Importance of specialized foucus in portfolio oil &amp; gas</h5>
+                                </a>
+                                <span class="blog-date">Jan 20, 2022</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua...</p>
+                                <a href="{% url 'blogs' %}" class="btn-1 btn-3 link"><span>Koproq oqish</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="img-box">
+                                <a href="{% url 'blogs' %}" class="open-post">
+                                    <img class="img-fluid" src="{% static 'images/blog/02_blog.jpg' %}" alt="02 Blog">
+                                </a>
+                                <ul>
+                                    <li><a href="{% url 'blogs' %}">Muhandislik</a></li>
+                                    <li><a href="{% url 'blogs' %}">,</a></li>
+                                    <li><a href="{% url 'blogs' %}">Qurilish</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-box">
+                                <a href="{% url 'blogs' %}" class="title-blog">
+                                    <h5>qanday qilib kuchli bino qurish mumkin Qurilish rejasi</h5>
+                                </a>
+                                <span class="blog-date">Jan 25, 2022</span>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                                <a href="{% url 'blogs' %}" class="btn-1 btn-3 link"><span>Koproq oqish</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="img-box">
+                                <a href="{% url 'blogs' %}" class="open-post">
+                                    <img class="img-fluid" src="{% static 'images/blog/03_blog.jpg' %}" alt="03 Blog">
+                                </a>
+                                <ul>
+                                    <li><a href="{% url 'blogs' %}">
+                                        sanoat</a></li>
+                                    <li><a href="{% url 'blogs' %}">,</a></li>
+                                    <li><a href="{% url 'blogs' %}">Muhandislik</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-box">
+                                <a href="{% url 'blogs' %}" class="title-blog">
+                                    <h5>biz innovatsion sanoat materiallarini loyihalashtirmoqdamiz</h5>
+                                </a>
+                                <span class="blog-date">Jan 30, 2022</span>
+                                <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                                <a href="{% url 'blogs' %}" class="btn-1 btn-3 link"><span>Koproq oqish</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- :: Footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <p>@ 2022 Gazolin. With Love by <a href="https://1.envato.market/AR-Coder">AR-Coder</a></p>
+                    <ul>
+                        <li><a href="#">Terms &amp; Conditions </a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- :: Scroll UP -->
+        <div class="scroll-up">
+            <a class="move-section" href="#page">
+                <i class="fas fa-long-arrow-alt-up"></i>
+            </a>
+        </div>
+        
+        <!-- :: JavaScript Files -->
+        <!-- :: jQuery JS -->
+        <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+        <!-- :: Bootstrap JS Bundle With Popper JS -->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        
+        <!-- :: Owl Carousel JS -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        
+        <!-- :: Lity -->
+        <script src="{% static 'js/lity.min.js' %}"></script>
+        
+        <!-- :: Nice Select -->
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        
+        <!-- :: Waypoints -->
+        <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+
+        <!-- :: CounterUp -->
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+        
+        <!-- :: Magnific Popup -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		
+		<!-- :: MixitUp -->
+        <script src="{% static 'js/mixitup.min.js' %}"></script>
+        
+        <!-- :: Main JS -->
+        <script src="{% static 'js/main.js' %}"></script><script src="{% static 'js/ajax-script.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,366 @@
+/*
+::
+:: Theme Name: Gazolin - Industry & Manufacturing HTML Template
+:: Email: Nourramadan144@gmail.com
+:: Author URI: https://themeforest.net/user/ar-coder
+:: Author: ar-coder
+:: Version: 1.0
+:: 
+*/
+
+/* :: XX-Large devices */
+@media (max-width: 1399){
+    
+    /* :: FAQs */
+    .faq .faq-box{
+        padding: 16px;
+    }
+}
+
+/* :: X-Large devices */
+@media (max-width: 1199px){
+    /* :: Header */
+    .header .banner .handline{
+        font-size: 64px;
+    }
+    
+    /* :: Features */
+    .features .all-features-item .features-item .content-box h4{
+        font-size: 18px;
+    }
+    
+    /* :: About US */
+    .about-us .about-us-text-box .img-person .signature {
+        width: 160px;
+    }
+    
+    /* :: Get Update */
+    .get-update h5{
+        font-size: 30px;
+    }
+    
+}
+
+/* :: Large devices */
+@media (max-width: 991px){
+    /* :: Section Title */
+    .sec-title h3{
+        margin-bottom: 20px;
+    }
+	
+	/* :: BG Section */
+    .bg-section-2-left,
+    .bg-section-2-right{
+        height: 50%;
+        float: none;
+        width: 100%;
+    }
+    
+    /* :: Navbar */
+    .top-navbar{
+        display: none;
+    }
+    .nav-bar .content-box{
+        display: block !important;
+    }
+    .nav-bar .logo{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 16px 0;
+    }
+    .nav-bar .logo .open-nav-bar span{
+        width: 30px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #FFF;
+        display: block;
+    }
+    .nav-bar.active .logo .open-nav-bar span{
+        background-color: #1C1A30;
+    }
+    .nav-bar .logo .open-nav-bar:hover span{
+        background-color: #F57009;
+    }
+    .nav-bar .logo .open-nav-bar span:nth-of-type(2){
+        margin: 5px 0;
+        width: 20px;
+        position: relative;
+        right: -10px;
+    }
+    .nav-bar .nav-bar-links{
+        display: none;
+    }
+    .nav-bar .nav-bar-links.active{
+        display: block;
+        max-height: 300px;
+        overflow: hidden;
+        overflow-y: scroll;
+        -webkit-box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
+                box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
+        background-color: #1C1A30;
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1{
+        display: block;
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1 .link-level-1{
+        padding: 12px 0 12px 12px;
+        margin-right: 12px;
+    }
+    .nav-bar.active .nav-bar-links .level-1 .item-level-1 .link-level-1{
+        color: #FFF;
+    }
+    .nav-bar.active .nav-bar-links .level-1 .item-level-1 .link-level-1:hover,
+    .nav-bar.active .nav-bar-links .level-1 .item-level-1 .link-level-1.color-active,
+    .nav-bar.active .nav-bar-links .level-2 .item-level-2 .link-level-2:hover{
+        color: #F57009;
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1 .link-level-1:before{
+        display: none;
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1 .link-level-1:after{
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        right: 10px;
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+        background-color: #F57009;
+        color: #FFF;
+        text-align: center;
+        border-radius: 50%;
+        font-weight: 900;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1.has-menu .link-level-1.active:after{
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    .nav-bar .nav-bar-links .level-1 .item-level-1:last-of-type .link-level-1{
+        margin-right: 12px;
+    }
+    .nav-bar .nav-bar-links .level-2{
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        opacity: unset;
+        visibility: unset;
+        position: unset;
+        padding: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: none;
+    }
+    .nav-bar .nav-bar-links .level-2.active{
+        display: block;
+    }
+    .nav-bar .nav-bar-links .level-2.active .item-level-2{
+        margin: 0 40px;
+    }
+    .nav-bar .nav-bar-links .level-2 .item-level-2 .link-level-2{
+        color: #F1F1F1;
+        border-bottom: 1px solid rgb(248 246 247 / 10%);
+        padding-left: 0;
+    }
+    .nav-bar .nav-bar-tools {
+        display: none !important;
+    }
+    
+    /* :: Header */
+    .header .other-tools{
+        margin-top: 50px;
+        display: block !important;
+        text-align: center;
+    }
+    
+    /* :: Features */
+    .features .all-features-item .features-item .content-box h4{
+        font-size: 22px;
+    }
+	    
+    /* :: About US */
+    .about-us .about-us-img-box{
+        height: 500px;
+        margin: 0 0 50px 0;
+		padding: 0;
+    }
+    .about-us .about-us-img-box .img-box{
+        background-position: top;
+    }
+	.about-qualified-employees{
+		left: 0;
+	}
+    
+    /* :: Provide 2 */
+    .provide-2 .faq{
+        margin: 0;
+    }
+    
+    /* :: Provide 3 */
+	.provide-3 .img-box{
+		height: 500px;
+		margin: 50px 0;
+	    background-position: top;
+	}
+	
+    /* :: Get Update */
+    .get-update{
+        text-align: center;
+    }
+    .get-update .d-flex.align-items-center.justify-content-between{
+        display: block !important;
+    }
+    .get-update .phone{
+        margin: 30px 0;
+    }
+	
+	/* :: ----------- CSS Home 2 ----------- */
+	.all-navbar.home-2 .nav-bar .logo .open-nav-bar span{
+		background-color: #1C1A30;
+	}
+	.all-navbar.home-2 .nav-bar .logo .open-nav-bar:hover span{
+        background-color: #F57009;
+    }
+	.all-navbar.home-2 .nav-bar .nav-bar-links .level-1 .item-level-1 .link-level-1{
+		color: #FFF;
+	}
+	.about-us.home-2 .about-us-img-box{
+		margin: 50px 0 0 0;
+		padding-left: 30px;
+	}
+	.provide.home-2 .quote-box .map-box{
+		margin: 0 0 40px 0;
+		height: 180px;
+	}
+	.provide.home-2 .quote-box form{
+		margin-top: 30px;
+	}
+	.testimonial.home-2 .img-box{
+		height: 450px;
+		margin-right: 0;
+	    background-position: top;
+	}
+	.testimonial.home-2 .box{
+		margin: 50px 0 0 0;
+	}
+	
+	/* :: ----------- CSS Home 3 ----------- */
+	.features.home-3 .all-features-item .features-item.one{
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 5px;
+	}
+	.features.home-3 .all-features-item .features-item.three{
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 5px;
+	}
+	.about-us.home-3 .about-us-img-box{
+		padding-right: 0;
+	}
+	
+	/* :: Single Team & Services Sidebar */
+	.single-team-sidebar.mr-20,
+	.sidebar-services.mr-20,
+	.sidebar-shop.mr-20{
+		margin-right: 0;
+	}
+	
+	/* :: Single Blog Sidebar */
+	.sidebar-blog.ml-20{
+		margin-left: 0;
+	}
+	
+	/* :: Contact US */
+	.contact-us .map-box{
+		margin: 0 0 50px 0;
+		height: 400px;
+	}
+	
+}
+
+/* :: Medium devices */
+@media (max-width: 768px){
+    /* :: Header */
+    .header .banner .handline{
+        font-size: 54px;
+    }
+    .header .banner .about-website{
+        margin-right: 0;
+    }
+    
+    /* :: Qoute Box */
+    .quote-box form{
+        margin: 50px 0 0 0;
+    }
+    .quote-box form .col-lg-6,
+    .quote-box form .col-lg-12{
+        padding: 0
+    }
+    
+    /* :: CopyRight */
+    .copyright p,
+    .copyright ul{
+        text-align: center;
+        float: none;
+        margin-bottom: 30px;
+    }
+    .copyright ul{
+        margin-bottom: 0;
+    }
+	
+	/* :: Breadcrumb Header */
+	.breadcrumb-header .banner h1{
+		font-size: 60px;
+	}
+	
+	/* :: Single Team */
+	.single-team-content-box .about-us-core-list .item {
+		width: 100%;
+		float: none;
+	}
+	
+	/* :: 404 Error Page */
+	.page-404-area h2{
+		font-size: 130px;
+	}
+}
+
+/* :: Small devices */
+@media (max-width: 575px){
+    /* :: Header */
+    .header, .header .header-carousel .sec-hero{
+        min-height: 1000px !important;
+    }
+    .header .banner .handline{
+        font-size: 44px;
+    }
+    .header .banner .btn-box .btn-1:nth-child(even){
+        margin: 30px 0 0 0;
+    }
+    
+    /* :: About US */
+    .about-us .about-us-text-box .about-us-features-carousel{
+        margin-top: 30px;
+    }
+    
+    /* :: Provide 2 */
+    .provide-2 .provide-btn .btn-1:first-of-type{
+        margin: 0 0 30px 0;
+    }
+	
+	/* :: Bill table */
+	.bill-table{
+		display: block;
+		overflow-x: scroll;
+	}
+}

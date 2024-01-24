@@ -1,0 +1,285 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- :: Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Gazolin is a Industry & Manufacturing HTML Template. Designed with great attention to details, flexibility and performance. It is ultra professional, smooth and sleek, with a clean modern layout. Gazolin specially designed for Automotive, Construction, Factories, Industrial, Industrial Business, Industrial Chemicals, Industrial Corporate, Industrial Engineering, Industrial Factory, Industrial HTML5, Industry, Machinery, Manufacturing, Mechanical Engineering, Power Energy, Services Company and other Industry & Manufacturing related services. Gazolin comes with most advanced and latest web technologies, enjoyable UX and the most beautiful design trends. Our template provides a platform to simply edit elements, choose styles and play around with the look and feel of your site. Build beautiful, intelligent websites with over 03+ Homepage Concepts ready to go or combine, build a layout has never been easier. There is a huge range of +34 styled pages waiting for your customization, anything you can think of can be built with our template. If you are searching for innovative, modern and clean HTML5 template, you must choose Gazolin. Gazolin comes with necessary features and pages. Gazolin comes with necessary features for Industrial websites such as about pages, Testimonials, Clients, questions & answers, work, services, team & single team profiles, awesome blog pages and more. This HTML template can easily satisfy all of your needs.">
+        <meta name="keywords" content="Automotive, Construction, Factories, Industrial, Industrial Business, Industrial Chemicals, Industrial Corporate, Industrial Engineering, Industrial Factory, Industrial HTML5, Industry, Machinery, Manufacturing, Mechanical Engineering, Power Energy">
+
+        <!-- :: Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- :: Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+        <!-- :: Title -->
+        <title>Gazolin - Industry &amp; Manufacturing HTML Template</title>
+
+        <!-- :: Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap">
+
+        <!-- :: Fontawesome -->
+        <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/all.min.css' %}">
+
+        <!-- :: Flaticon -->
+        <link rel="stylesheet" href="{% static 'fonts/flaticon/style.css' %}">
+
+        <!-- :: Animate -->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        
+        <!-- :: Owl Carousel -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        
+        <!-- :: Lity -->
+        <link rel="stylesheet" href="{% static 'css/lity.min.css' %}">
+        
+        <!-- :: Nice Select CSS -->
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+        
+        <!-- :: Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+        <!-- :: Style CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- :: Style Responsive CSS -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    <body>
+        <!-- :: Loading -->
+        <div class="loading">
+            <div class="loading-box">
+                <div class="lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- :: All Navbar -->
+        <header class="all-navbar home-2">
+			
+            <!-- :: Navbar -->
+            <nav class="nav-bar">
+                <div class="container">
+                    <div class="content-box d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="index.html" class="logo-nav">
+                                <img class="img-fluid one" src="{% static 'images/logo/01_logo.png' %}" alt="01 Logo">
+                                <img class="img-fluid two" src="{% static 'images/logo/02_logo.png' %}" alt="02 Logo">
+                            </a>
+                            <a href="#open-nav-bar-menu" class="open-nav-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="nav-bar-links" id="open-nav-bar-menu">
+                            <ul class="level-1">
+                                <li class="item-level-1">
+                                    <a href="{% url 'index' %}" class="link-level-1">Asosiy sahifa</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'servises' %}" class="link-level-1">Xizmatlar</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'blogs' %}" class="link-level-1">blogs</a>
+                                </li>
+                                <li class="item-level-1">
+                                    <a href="{% url 'contacts' %}" class="link-level-1">Xabar qoldirish</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-bar-tools d-flex align-items-center justify-content-between">
+							<li class="item">
+                                <span class="menu-icon open"><i class="fas fa-list"></i></span>
+                            </li>
+							<li class="item">
+                                <span class="search-icon open"><i class="fas fa-search"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- :: Search Box -->
+        <div class="search-box">
+            <form>
+                <input type="search" placeholder="Search Here....." required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <span class="search-box-icon exit"><i class="fas fa-times"></i></span>
+        </div>
+        
+        <!-- :: Menu Box -->
+        <div class="menu-box">
+            <div class="inner-menu">
+                <div class="website-info">
+                    <a href="index.html" class="logo"><img class="img-fluid" src="{% static 'images/logo/02_logo.png' %}" alt="02 Logo"></a>
+                    <p>Gazolin sanoatdir &amp; Ishlab chiqarish xizmatlarini ko'rsatuvchi muassasalar. Zavod, ishlab chiqarish, sanoat, muhandislik, qurilish va har qanday tegishli sanoat parvarishlash sohasi uchun javob beradi.</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Aloqa ma'lumotlari</h4>
+                    <div class="contact-box">
+                        <i class="ar-icons-call"></i>
+                        <div class="box">
+                            <a class="phone" href="tel:01212843661">0121284 3661</a>
+                            <a class="phone" href="tel:01029134630">0102913 4630</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="ar-icons-email"></i>
+                        <div class="box">
+                            <a class="mail" href="mailto:support@Gazolin.com">Support@Gazolin.com</a>
+                            <a class="mail" href="mailto:mailbox@ar-coder.com">MailBox@AR-Coder.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="ar-icons-location"></i>
+                        <div class="box">
+                            <p>14D Street Brooklyn,</p>
+                            <p>New York.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-us">
+                    <h4>Follow Us</h4>
+                    <ul class="icon-follow">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <span class="menu-box-icon exit"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+        
+        <!-- :: Breadcrumb Header -->
+        <section class="breadcrumb-header style-2" id="page" style="background-image: url(assets/images/header/03_breadcrumb-header.jpg)">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="banner">
+                            <h1>Xabar qoldirish</h1>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Asosiy sahifa</a></li>
+                                <li><i class="fas fa-angle-right"></i></li>
+                                <li>Xabar qoldirish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<!-- :: contact us -->
+		<div class="contact-us py-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- :: Map -->
+                        <div class="map-box">
+                            <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                    {% csrf_token %}
+                    <div class="col-lg-6">
+						<div class="add-comments">
+							<form class="inner-add-comments form-contact-2">
+								<div class="row">
+									<div class="col-md-6 inner-add-comments-box">
+										<input type="text" name="title" placeholder="Ismingizni kiriting" required>
+									</div>
+                                    <div class="col-md-6 inner-add-comments-box">
+										<input type="tel" name="phone" placeholder="Telefon raqamingizni kiriting" required>
+									</div>
+									<div class="col-md-6 inner-add-comments-box">
+										<input type="Email" name="email" placeholder="Emailingizni kiriting" required>
+									</div>
+									<div class="col-md-12 inner-add-comments-box">
+										<textarea name="body" placeholder="Sizning xabaringiz shu yerda" required></textarea>
+									</div>
+									<div class="col-md-12 inner-add-comments-box last">
+										<button class="btn-1 btn-3 submit" type="submit"><span>Yuborish</span></button>
+										<span class="out-message"></span>
+									</div>
+								</div>
+							</form>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <!-- :: Footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <p>@ 2022 Gazolin. With Love by <a href="https://1.envato.market/AR-Coder">AR-Coder</a></p>
+                    <ul>
+                        <li><a href="#">Terms &amp; Conditions </a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- :: Scroll UP -->
+        <div class="scroll-up">
+            <a class="move-section" href="#page">
+                <i class="fas fa-long-arrow-alt-up"></i>
+            </a>
+        </div>
+        
+        <!-- :: JavaScript Files -->
+        <!-- :: jQuery JS -->
+        <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+        <!-- :: Bootstrap JS Bundle With Popper JS -->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        
+        <!-- :: Owl Carousel JS -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        
+        <!-- :: Lity -->
+        <script src="{% static 'js/lity.min.js' %}"></script>
+        
+        <!-- :: Nice Select -->
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        
+        <!-- :: Waypoints -->
+        <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+
+        <!-- :: CounterUp -->
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+        
+        <!-- :: Magnific Popup -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		
+		<!-- :: MixitUp -->
+        <script src="{% static 'js/mixitup.min.js' %}"></script>
+        
+        <!-- :: Main JS -->
+        <script src="{% static 'js/main.js' %}"></script><script src="{% static 'js/ajax-script-2.js' %}"></script>
+    </body>
+</html>
